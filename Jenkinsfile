@@ -9,7 +9,7 @@ pipeline {
         }
         stage('Test'){
             steps {
-                echo 'Testing..'
+                grep "chicken" Jenkinsfile
             }
         }
         stage('Deploy') {
